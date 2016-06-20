@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICooper_verify.cs" />
     <Compile Include="ILogin.cs" />
     <Compile Include="IOne.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

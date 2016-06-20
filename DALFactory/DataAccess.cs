@@ -33,5 +33,15 @@ namespace DALFactory
             ILogin ilogin = new MysqlDAL.Login();
             return ilogin;
         }
+
+        /// <summary>
+        /// 获取一个公司验证信息类
+        /// </summary>
+        /// <returns></returns>
+        public static ICooper_verify GetCooper_verify()
+        {
+            ICooper_verify iCooper_verify = new MysqlDAL.Cooper_verify();
+            return iCooper_verify;
+        }
     }
 }

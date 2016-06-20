@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cooper_verify.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="One.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

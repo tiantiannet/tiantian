@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cooper_chanllengeWeb.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -104,6 +105,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cooper_chanllengeWeb.aspx.cs">
+      <DependentUpon>Cooper_chanllengeWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cooper_chanllengeWeb.aspx.designer.cs">
+      <DependentUpon>Cooper_chanllengeWeb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginWeb.aspx.cs">
       <DependentUpon>LoginWeb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
