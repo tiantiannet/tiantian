@@ -20,6 +20,8 @@ namespace MysqlDAL
         /// </summary>
         private const String SQL_SELECT_Cooper_verify = "select * from corp where username =  ";
 
+        private const String SQL_UPDATE_Cooper_verify = @"UPDATE corp set username = {0} and corpname = {1} 
+            and idphone = {2} and corptelephone = {3} and corpweixin = {4} and selectprov ={5} and selectindustry = {6}";
         /// <summary>
         /// POJO类 
         /// </summary>
@@ -31,19 +33,13 @@ namespace MysqlDAL
         /// <param name="corpname">初始化索引</param>
         public void Make(String username)
         {
-            //查询结果容器
-            DataSet record = new DataSet();
-            //从索引中补全语句
-            MySqlDBCore.Execute(SQL_SELECT_Cooper_verify + "'" + username + "'", ref record);
-
-            //若记录存在，填充POJO
-            if (record.Tables.Count != 0 && record.Tables[0].Rows.Count != 0)
-            {
-                //生成POJO类
-                this.cooper_verifyInfo = new Cooper_verifyInfo(username, record.Tables[0].Rows[0]["corpname"].ToString(), record.Tables[0].Rows[0]["idphone"].ToString(), record.Tables[0].Rows[0]["corptelephone"].ToString(), record.Tables[0].Rows[0]["corpweixin"].ToString(), record.Tables[0].Rows[0]["selectprov"].ToString(), record.Tables[0].Rows[0]["selectindustry"].ToString());
-            }
         }
 
+        public void InsertCorp(String username,String corpname, String idphone, 
+            String corptelephone, String corpweixin, String selectprov, String selectindustry)
+        {
+            MySqlDBCore.Execute(String.Format(SQL_UPDATE_Cooper_verify, username, corpname, corptelephone, idphone,corpweixin, selectprov, selectindustry)); 
+        }
         /// <summary>
         /// 获取公司id
         /// </summary>

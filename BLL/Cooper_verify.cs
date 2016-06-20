@@ -34,9 +34,9 @@ namespace BLL
         /// <param name="selectdist">公司所在区</param>
         /// <param name="selectindustry">公司所在行业</param>
         /// <returns></returns>
-        public String cooper_verify(String username,String corpname, String idphone, String corptelephone, String corpweixin, String selectprov, String selectindustry)
+        public String cooper_verify(String username,String corpname, String corptelephone, String corpweixin, String selectprov, String selectindustry)
         {
-            dal.Make(username);
+            dal.InsertCorp(username, corpname, corpname, corptelephone, corpweixin, selectprov, selectindustry);
             if (dal.getUsername() == username  && dal.getCorpname() == corpname && dal.getIdphone() == idphone && dal.getCorptelephone() == corptelephone && dal.getCorpweixin() == corpweixin && dal.getSelectprov() == selectprov && dal.getSelectindustry() == selectindustry)
             {
                 return "success";

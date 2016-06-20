@@ -22,30 +22,32 @@ namespace Web
         {
             //在此构造一个BLL业务类
             this.coop_verify = new BLL.Cooper_verify();
+
         }
         /// <summary>
         /// 公司验证信息事件
         /// </summary>
         /// <param name="sender">系统传参</param>
         /// <param name="e">系统传参</param>
-        protected void coop_verify_Click(object sender, EventArgs e)
+        protected void confimCompany_btn_Click(object sender, EventArgs e)
         {
             String corpname;
             //String corppic;
-            String idphone; 
-            String recruittelephone; 
-            String corpweixin; 
-            String selectprov; 
+            String idphone;
+            String corptelephone;
+            String corpweixin;
+            String selectprov;
             String selectindustry;
             //String logopic;
             corpname = corp_name.Text;
             //corppic = corp_pic.Text;
             idphone = id_phone.Text;
-            recruittelephone = telehone.Text;
+            corptelephone = telehone.Text;
             corpweixin = weixin.Text;
             selectprov = select_prov.Value;
             selectindustry = select_industry.Value;
-            String username = Session["username"].ToString(); 
+            String username = Session["username"].ToString();
+            coop_verify.cooper_verify(corpname, idphone, corptelephone, corpweixin, selectprov, selectindustry);
         }
     }
 }

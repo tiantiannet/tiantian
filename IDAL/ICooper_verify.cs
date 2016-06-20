@@ -56,5 +56,18 @@ namespace IDAL
         /// </summary>
         /// <returns>公司所在行业</returns>
         String getSelectindustry();
+
+        /// <summary>
+        /// 添加公司信息
+        /// </summary>
+        /// <param name="username">公司id</param>
+        /// <param name="corpname">公司名称</param>
+        /// <param name="idphone">招聘人员手机号</param>
+        /// <param name="corptelephone">公司电话</param>
+        /// <param name="corpweixin">公司微信</param>
+        /// <param name="selectprov">公司所在省份</param>
+        /// <param name="selectindustry">公司所在行业</param>
+        /// <returns></returns>
+        void InsertCorp(String username,String corpname, String idphone, String corptelephone, String corpweixin, String selectprov, String selectindustry);
     }
 }
