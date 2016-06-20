@@ -101,9 +101,17 @@
     <Content Include="js\npm.js" />
     <Content Include="LoginWeb.aspx" />
     <Content Include="OneWeb.aspx" />
+    <Content Include="OxcodeWeb.aspx" />
+    <Content Include="RegisterWeb.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="LoginWeb.aspx.cs">
       <DependentUpon>LoginWeb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -118,7 +126,24 @@
     <Compile Include="OneWeb.aspx.designer.cs">
       <DependentUpon>OneWeb.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OxcodeWeb.aspx.cs">
+      <DependentUpon>OxcodeWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OxcodeWeb.aspx.designer.cs">
+      <DependentUpon>OxcodeWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterWeb.aspx.cs">
+      <DependentUpon>RegisterWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterWeb.aspx.designer.cs">
+      <DependentUpon>RegisterWeb.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap-theme.css.map" />

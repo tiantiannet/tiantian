@@ -37,7 +37,16 @@ namespace BLL
             {
                 return "success";
             }
-            else return "fail";
+            else if (dal.getUsername() == username)
+            {
+                return "password error";
+            }
+            else
+                return "user not exist";
+        }
+        public String gettype()
+        {
+            return dal.gettype();
         }
     }
 }

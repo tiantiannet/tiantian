@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ILogin.cs" />
     <Compile Include="IOne.cs" />
+    <Compile Include="IRegister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

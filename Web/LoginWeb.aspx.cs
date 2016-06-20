@@ -34,19 +34,21 @@ namespace Web
         /// <param name="e">系统传参</param>
         protected void login_Click(object sender, EventArgs e)
         {
-            Response.Write(@"<script> alert('成功')</script>");
-            return;
-
             String username;
             String password;
             username = login_email.Text;
             password = login_password.Text;
 
             String msg = login.login(username,password);
-
             //输出
-            Response.Write(@"<script> alert('成功')</script>");
-            
+            Response.Write(@"<script> alert('" + msg + @"')</script>");
+
+            String mytype = login.gettype();
+            if (msg.Equals("succeed"))
+            {
+                Session["username"] = username;
+                Session["type"] = mytype;
+            }
         }
     }
 }

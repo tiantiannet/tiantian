@@ -21,15 +21,17 @@ namespace Model
         /// </summary>
         private String password;
 
+        private String type;
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="username">用户名</param>
         /// <param name="password">用户密码</param>
-        public LoginInfo(String username, String password)
+        public LoginInfo(String username, String password, String mytype)
         {
             this.username = username;
             this.password = password;
+            this.type = mytype;
         }
 
         /// <summary>
@@ -48,6 +50,12 @@ namespace Model
         {
             get { return password; }
             set { password = value; }
+        }
+
+        public String Type
+        {
+            get { return type; }
+            set { type = value; }
         }
 
     }

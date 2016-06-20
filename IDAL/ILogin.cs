@@ -26,5 +26,7 @@ namespace IDAL
         /// </summary>
         /// <returns>用户密码</returns>
         String getPassword();
+
+        String gettype();
     }
 }

@@ -40,7 +40,11 @@ namespace MysqlDAL
             if (record.Tables.Count != 0 && record.Tables[0].Rows.Count != 0)
             {
                 //生成POJO类
-                this.loginInfo = new LoginInfo(username,record.Tables[0].Rows[0]["password"].ToString());
+                this.loginInfo = new LoginInfo(username, record.Tables[0].Rows[0]["password"].ToString(), record.Tables[0].Rows[0]["type"].ToString());
+            }
+            else
+            {
+                this.loginInfo = new LoginInfo("", "","");
             }
         }
 
@@ -60,6 +64,11 @@ namespace MysqlDAL
         public String getPassword()
         {
             return this.loginInfo.Password;
+        }
+
+        public String gettype()
+        {
+            return this.loginInfo.Type;
         }
     }
 

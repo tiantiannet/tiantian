@@ -24,6 +24,11 @@ namespace DALFactory
             return ione;
         }
 
+        public static IRegister GetRegister()
+        {
+            IRegister iRegister = new MysqlDAL.Register();
+            return iRegister;
+        }
         /// <summary>
         /// 获取一个登录类
         /// </summary>
