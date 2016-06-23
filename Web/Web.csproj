@@ -100,6 +100,7 @@
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\npm.js" />
     <Content Include="LoginWeb.aspx" />
+    <Content Include="New_Recruit_1.aspx" />
     <Content Include="OneWeb.aspx" />
     <Content Include="OxcodeWeb.aspx" />
     <Content Include="RegisterWeb.aspx" />
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="LoginWeb.aspx.designer.cs">
       <DependentUpon>LoginWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New_Recruit_1.aspx.cs">
+      <DependentUpon>New_Recruit_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New_Recruit_1.aspx.designer.cs">
+      <DependentUpon>New_Recruit_1.aspx</DependentUpon>
     </Compile>
     <Compile Include="OneWeb.aspx.cs">
       <DependentUpon>OneWeb.aspx</DependentUpon>
