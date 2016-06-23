@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using BLL;
 namespace Web
 {
-    public partial class cooper_chanllengeWeb : System.Web.UI.Page
+    public partial class Cooper_verify : System.Web.UI.Page
     {
         /// <summary>
         /// 业务类
@@ -22,7 +22,6 @@ namespace Web
         {
             //在此构造一个BLL业务类
             this.coop_verify = new BLL.Cooper_verify();
-
         }
         /// <summary>
         /// 公司验证信息事件
@@ -47,7 +46,7 @@ namespace Web
             selectprov = select_prov.Value;
             selectindustry = select_industry.Value;
             String username = Session["username"].ToString();
-            coop_verify.cooper_verify(corpname, idphone, corptelephone, corpweixin, selectprov, selectindustry);
+            coop_verify.cooper_verify(username,corpname, idphone, corptelephone, corpweixin, selectprov, selectindustry);
         }
     }
 }

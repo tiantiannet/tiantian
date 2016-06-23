@@ -43,5 +43,25 @@ namespace DALFactory
             ICooper_verify iCooper_verify = new MysqlDAL.Cooper_verify();
             return iCooper_verify;
         }
+
+        /// <summary>
+        /// 获取一个公司标签类
+        /// </summary>
+        /// <returns></returns>
+        public static IEdit_tag_views GetEdit_tag_views()
+        {
+            IEdit_tag_views Iedit_tag_views = new MysqlDAL.Edit_tag_views();
+            return Iedit_tag_views;
+        }
+
+        /// <summary>
+        /// 获取一个添加个人信息类
+        /// </summary>
+        /// <returns></returns>
+        public static IEdit_user_info GetEdit_user_info()
+        {
+            IEdit_user_info Iedit_user_info = new MysqlDAL.Edit_user_info();
+            return Iedit_user_info;
+        }
     }
 }

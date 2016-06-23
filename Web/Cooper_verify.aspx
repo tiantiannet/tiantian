@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cooper_chanllengeWeb.aspx.cs" Inherits="Web.cooper_chanllengeWeb" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cooper_verify.aspx.cs" Inherits="Web.Cooper_verify" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +96,6 @@
 					<div class="row">
 						<!-- 错误信息 -->
 						<!-- <font color="red"></font> -->
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 						<form id="cooper_info_form" method="post" class="form-vertical" runat="server" action="javascript:void(0)"  enctype="multipart/form-data">
 							<input name="cooperId" value="2542" type="hidden">
 							<input name="cooperEmail" value="13301136@bjtu.edu.cn" type="hidden">
@@ -195,7 +194,7 @@
 								<span class="help-block" id="hint_logo"></span>
 							</div>
 							<div class="form-group form-actions">
-                                <asp:Button ID="confimCompany_btn" runat="server" Text="确认" type="submit" class="btn btn-primary btn-lg" style="border-radius: 3px;"/>
+                                <asp:Button ID="confimCompany_btn" runat="server" Text="确认" type="submit" class="btn btn-primary btn-lg" style="border-radius: 3px;" OnClick="confimCompany_btn_Click"/>
 							</div>
 						</form>
 					</div>

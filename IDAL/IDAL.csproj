@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICooper_verify.cs" />
+    <Compile Include="IEdit_tag_views.cs" />
+    <Compile Include="IEdit_user_info.cs" />
     <Compile Include="ILogin.cs" />
     <Compile Include="IOne.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
