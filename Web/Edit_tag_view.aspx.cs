@@ -33,14 +33,64 @@ namespace Web
             /// <param name="e">系统传参</param>
             protected void save_Next_Click(object sender, EventArgs e)
             {
-                String corp_cont1;
-                String corp_cont2;
-                String corp_cont3;
-                corp_cont1 = corp_btn1.Text;
-                corp_cont2 = corp_btn2.Text;
-                corp_cont3 = corp_btn3.Text;
+                String corp_cont = "";
+                if (corp_box1.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "五险一金";
+                }
+
+                if (corp_box2.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "年底双薪";
+                }
+
+                if (corp_box3.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "股份期权";
+                }
+
+                if (corp_box4.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "年终分红";
+                }
+
+                if (corp_box5.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "绩效奖金";
+                }
+
+                if (corp_box6.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "岗位晋升";
+                }
+
+                if (corp_box7.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "年度旅游";
+                }
+
+                if (corp_box8.Checked == true)
+                {
+                    if (!corp_cont.Equals(""))
+                        corp_cont = ",";
+                    corp_cont = "弹性工作";
+                }
                 String username = Session["username"].ToString();
-                edit_tag.edit_tag_view(username, corp_cont1, corp_cont2, corp_cont3);
-            }   
+                edit_tag.edit_tag_view(username, corp_cont);
+            }
     }
 }

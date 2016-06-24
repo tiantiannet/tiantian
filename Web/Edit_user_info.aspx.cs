@@ -33,20 +33,67 @@ namespace Web
         /// <param name="e">系统传参</param>
         protected void sub_btn_id_Click(object sender, EventArgs e)
         {
+            /*
             String userrealyname;
             String userage;
             String usersex;
-            String userskill;
+            String userskill = "";
             String workWanterStatus;
             String userWorkprov;
+            if (Java.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "Java";
+            }
+            if (Android.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "Android";
+            }
+            if (iOS.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "iOS";
+            }
+            if (C.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "C";
+            }
+            if (Cjiajia.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "C++";
+            }
+            if (php.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "php";
+            }
+            if (Python.Checked == true)
+            {
+                if (!userskill.Equals(""))
+                    userskill += ",";
+                userskill += "Python";
+            }
             userrealyname = corp_name.Text;
             userage = corp_sname.Text;
-            usersex = example_inline_radio1.Text;
-            userskill = Java.Text;
+            usersex = select_sex.Value;
             workWanterStatus = Want_job.Text;
             userWorkprov = select_prov.Value;
             String username = Session["username"].ToString();
-            edit_user_info.edit_user_info(username, userrealyname, userage, usersex, userskill, workWanterStatus, userWorkprov);
+            edit_user_info.edit_user_info(username, userrealyname, userage, usersex, userskill, workWanterStatus, userWorkprov);*/
+        }
+
+        protected void sub_btn_id_Click1(object sender, EventArgs e)
+        {
+            Console.Write("asd");
         }
     }
 }

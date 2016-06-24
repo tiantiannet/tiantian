@@ -105,18 +105,17 @@
     			</div>
     		</div>
     		<div class="row">
-                <form runat="server">
     			<div class="col-md-6 col-md-push-3 col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2">
     				<section id="middle">
-    					<form id="defaultForm" method="post" class="form-vertical" action="javascript:void(0)" enctype="multipart/form-data">
+    					<form id="defaultForm" method="post" class="form-vertical" runat="server" enctype="multipart/form-data">
     						<input type="hidden" value="Bzj4THeNbvu6E29YFZj2HZlpEIfpFPuJGcYanZuYEc1=" name="callback">
     						<div class="form-group">
     							<h3 class="grey">真实姓名</h3>
-                                <asp:TextBox ID="corp_name" runat="server" name="name" value="" type="text" class="form-control" placeholder="真实姓名"></asp:TextBox>
+    							<input name="name" value="" type="text" id="corp-name" class="form-control" placeholder="真实姓名">
     						</div>
     						<div class="form-group">
     							<h3 class="grey">年龄</h3>
-                                <asp:TextBox ID="corp_sname" runat="server" name="age" value="" type="text" class="form-control" placeholder="年龄"></asp:TextBox>
+    							<input name="age" value="" type="text" id="corp-sname" class="form-control" placeholder="年龄"> 
     							<span class="text-danger" id="error1" style="display: none;"></span> 
     							<span class="help-block" id="hint1"></span>
     						</div>
@@ -124,9 +123,9 @@
     							<h3 class="grey">性别</h3>
     							<div>
     								<label class="radio-inline" for="example-inline-radio1">
-                                    <asp:RadioButton ID="example_inline_radio1" runat="server" type="radio"  name="sex" value="0" Text="男"/>
+    									<input  type="radio" id="example-inline-radio1" name="sex" value="0"> 男
     								</label> <label class="radio-inline" for="example-inline-radio2">
-                                    <asp:RadioButton ID="example_inline_radio2" runat="server" type="radio"  name="sex" value="1" Text="女"/>
+    								<input  type="radio" id="example-inline-radio2" name="sex" value="1"> 女
     							</label>
     						</div>
     					</div>
@@ -135,32 +134,39 @@
     						<h3 class="grey">技术方向</h3>
     						<div>
     							<label class="radio-inline"> 
-                                    <asp:CheckBox id="Java" Text="Java" runat  ="server" type="checkbox" name="directions" value="1"/>
+    								<input type="checkbox" name="directions" value="1"> 
+    								Java
     							</label>
 
     							<label class="radio-inline"> 
-                                    <asp:CheckBox id="Android" Text="Android" runat  ="server" type="checkbox" name="directions" value="2"/>
+    								<input type="checkbox" name="directions" value="2"> 
+    								Android
     							</label>
 
-    							<label class="radio-inline">
-                                    <asp:CheckBox id="iOS" Text="iOS" runat  ="server" type="checkbox" name="directions" value="3"/>
-    							</label>
-    							
-    							<label class="radio-inline">
-                                    <asp:CheckBox id="C" Text="C语言(beta)" runat  ="server" type="checkbox" name="directions" value="4"/>
+    							<label class="radio-inline"> 
+    								<input type="checkbox" name="directions" value="3"> 
+    								iOS
     							</label>
     							
     							<label class="radio-inline"> 
-                                    <asp:CheckBox id="Cjiajia" Text="C++(beta)" runat  ="server" type="checkbox" name="directions" value="5"/>
+    								<input type="checkbox" name="directions" value="4"> 
+    								C语言(beta)
+    							</label>
+    							
+    							<label class="radio-inline"> 
+    								<input type="checkbox" name="directions" value="5"> 
+    								C++(beta)
     							</label>
     							
     							<br>
     							<label class="radio-inline"> 
-                                    <asp:CheckBox id="php" Text="php(beta)" runat  ="server" type="checkbox" name="directions" value="6"/>
+    								<input type="checkbox" name="directions" value="6"> 
+    								php(beta)
     							</label>
     							
     							<label class="radio-inline"> 
-                                    <asp:CheckBox id="Python" Text="Python(beta)" runat  ="server" type="checkbox" name="directions" value="7"/>
+    								<input type="checkbox" name="directions" value="7"> 
+    								Python(beta)
     							</label>
     							
     						</div>
@@ -172,10 +178,12 @@
     						</p>
     						<div>
     							<label class="radio-inline"> 
-                                    <asp:RadioButton ID="Want_job" runat="server" Text="是" type="radio" onclick="hideResumeFile(true)" name="jobstate" value="1"/>
+    								<input checked type="radio" onclick="hideResumeFile(true)" name="jobstate" value="1">
+    								是
     							</label>
     							<label class="radio-inline"> 
-                                    <asp:RadioButton ID="NoWant_job" runat="server" Text="否" type="radio" onclick="hideResumeFile(false)" name="jobstate" value="0"/>
+    								<input type="radio" onclick="hideResumeFile(false)" name="jobstate" value="0">
+    								否
     							</label> 
     							<input type="hidden" value="1" id="jobstate_id_hide">
     						</div>
@@ -186,7 +194,7 @@
     							<div id="Div1" class="form-inline">
     								<div class="form-group">
     									<label class="sr-only" for="exampleInputEmail3">省</label> 
-    									<select id="select_prov" runat="server" name="province" class="form-control prov" style="width: 172px;">
+    									<select name="province" class="form-control prov" style="width: 172px;">
                                             <option value="1">山东</option>
 									
                                             <option value="2">河南</option>
@@ -210,12 +218,11 @@
     						<span id="view_error" class="help-block"></span>
     					</div>
     					<div class="form-group form-actions pull-right">
-                            <asp:Button ID="sub_btn_id" runat="server" Text="保存" type="submit" class="btn btn-new1 btn-lg" style="border-radius: 3px;" OnClick="sub_btn_id_Click"/>
+    						<asp:button runat="server" type="submit" class="btn btn-new1 btn-lg" Text="保存" id="sub_btn_id" style="border-radius: 3px;" OnClick="sub_btn_id_Click1"></asp:button>
     					</div>
     				</form>
     			</section>
     		</div>
-            </form>
     	</div>
     	<!-- /.row -->
     </div>
@@ -232,7 +239,7 @@
         </ol>   
     </div> 
 
-    <script src="js/jquery-2.1.1.js"></script></script>
+    <script src="js/jquery-2.1.1.js"></script>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -430,7 +437,7 @@
                         {
                             type: "post",
                             url: "user/info/save_user_info.html",
-                            success: function (<asp:TextBox runat="server"></asp:TextBox>
+                            success: function (
                                 data) {
                                 data = eval('('
                                     + data

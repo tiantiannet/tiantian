@@ -17,32 +17,19 @@ namespace Model
         private String username;
 
         /// <summary>
-        /// 公司标签1
+        /// 公司标签
         /// </summary>
-        private String corp_cont1;
-        /// <summary>
-        /// 公司标签2
-        /// </summary>
-        private String corp_cont2;
-
-        /// <summary>
-        /// 公司标签3
-        /// </summary>
-        private String corp_cont3;
+        private String corp_cont;
 
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="username">公司id</param>
-        /// <param name="corpname">公司名</param>
-        /// <param name="idphone">招聘人员手机号</param>
-        /// <param name="corptelephone">公司电话</param>
-        public Edit_tag_viewsInfo(String username, String corp_cont1, String corp_cont2, String corp_cont3)
+        /// <param name="corp_cont">公司标签</param>
+        public Edit_tag_viewsInfo(String username, String corp_cont)
         {
             this.username = username;
-            this.corp_cont1 = corp_cont1;
-            this.corp_cont2 = corp_cont2;
-            this.corp_cont3 = corp_cont3;
+            this.corp_cont = corp_cont;
         }
 
         /// <summary>
@@ -54,30 +41,12 @@ namespace Model
             set { username = value; }            
         }
         /// <summary>
-        /// corp_cont1构造器
+        /// corp_cont构造器
         /// </summary>
-        public String Corp_cont1
+        public String Corp_cont
         {
-            get { return corp_cont1; }
-            set { corp_cont1 = value; }
-        }
-
-        /// <summary>
-        /// corp_cont2构造器
-        /// </summary>
-        public String Corp_cont2
-        {
-            get { return corp_cont2; }
-            set { corp_cont2 = value; }
-        }
-
-        /// <summary>
-        /// corp_cont3构造器
-        /// </summary>
-        public String Corp_cont3
-        {
-            get { return corp_cont3; }
-            set { corp_cont3 = value; }
+            get { return corp_cont; }
+            set { corp_cont = value; }
         }
     }
 }

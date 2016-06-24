@@ -24,14 +24,12 @@ namespace BLL
         /// 增加公司标签类
         /// </summary>
         /// <param name="username">公司id</param>
-        /// <param name="corp_cont1">公司标签1</param>
-        /// <param name="corp_cont2">公司标签2</param>
-        /// <param name="corp_cont3">公司标签3</param>
+        /// <param name="corp_cont1">公司标签</param>
         /// <returns></returns>
-        public String edit_tag_view(String username,String corp_cont1, String corp_cont2, String corp_cont3)
+        public String edit_tag_view(String username,String corp_cont)
         {
-            dal.InsertCorpCont(username,corp_cont1, corp_cont2, corp_cont3);
-            if (dal.getUsername() == username && dal.getCorp_cont1() == corp_cont1 && dal.getCorp_cont2() == corp_cont2 && dal.getCorp_cont2() == corp_cont3)
+            dal.InsertCorpCont(username,corp_cont);
+            if (dal.getUsername() == username && dal.getCorp_cont() == corp_cont)
             {
                 return "success";
             }

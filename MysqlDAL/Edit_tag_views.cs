@@ -20,8 +20,7 @@ namespace MysqlDAL
         /// </summary>
         private const String SQL_SELECT_Edit_tag_views = "select * from corp where username =  ";
 
-        private const String SQL_UPDATE_Edit_tag_views = @"UPDATE corp set username = {0} and corp_cont1 = {1} 
-            and corp_cont2 = {2} and corp_cont3 = {3}";
+        private const String SQL_UPDATE_Edit_tag_views = @"UPDATE corp set username = {0} and corp_cont = {1}";
         /// <summary>
         /// POJO类 
         /// </summary>
@@ -35,9 +34,9 @@ namespace MysqlDAL
         {
         }
 
-        public void InsertCorpCont(String username, String corp_cont1, String corp_cont2, String corp_cont3)
+        public void InsertCorpCont(String username, String corp_cont)
         {
-            MySqlDBCore.Execute(String.Format(SQL_UPDATE_Edit_tag_views, username, corp_cont1, corp_cont2, corp_cont3));
+            MySqlDBCore.Execute(String.Format(SQL_UPDATE_Edit_tag_views, username, corp_cont));
         }
         /// <summary>
         /// 获取公司id
@@ -49,30 +48,12 @@ namespace MysqlDAL
         }
 
         /// <summary>
-        /// 获取公司标签1
+        /// 获取公司标签
         /// </summary>
-        /// <returns>公司标签1</returns>
-        public String getCorp_cont1()
+        /// <returns>公司标签</returns>
+        public String getCorp_cont()
         {
-            return this.edit_tag_viewsInfo.Corp_cont1;
-        }
-
-        /// <summary>
-        /// 获取公司标签2
-        /// </summary>
-        /// <returns>公司标签2</returns>
-        public String getCorp_cont2()
-        {
-            return this.edit_tag_viewsInfo.Corp_cont2;
-        }
-
-        /// <summary>
-        /// 获取公司标签3
-        /// </summary>
-        /// <returns>公司标签3</returns>
-        public String getCorp_cont3()
-        {
-            return this.edit_tag_viewsInfo.Corp_cont3;
+            return this.edit_tag_viewsInfo.Corp_cont;
         }
     }
 }

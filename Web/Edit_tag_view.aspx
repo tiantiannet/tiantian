@@ -94,73 +94,37 @@
 					<div class="row">
 						<img src="img/corp_step2.png">
 						<div class="tag-group" id="tag_list_div">
-                                <asp:Button ID="corp_btn1" runat="server" Text="五险一金" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-							
-                                <asp:Button ID="corp_btn2" runat="server" Text="年底双薪" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+                                <asp:CheckBox ID="corp_box1" runat="server" Text="五险一金" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+		
+                                <asp:CheckBox ID="corp_box2" runat="server" Text="年底双薪" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 
-							    <asp:Button ID="corp_btn3" runat="server" Text="股份期权" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+							    <asp:CheckBox ID="corp_box3" runat="server" Text="股份期权" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 							
-                                <asp:Button ID="corp_btn4" runat="server" Text="年终分红" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+                                <asp:CheckBox ID="corp_box4" runat="server" Text="年终分红" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 
-                                <asp:Button ID="corp_btn5" runat="server" Text="绩效奖金" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+                                <asp:CheckBox ID="corp_box5" runat="server" Text="绩效奖金" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 						
-                                <asp:Button ID="corp_btn6" runat="server" Text="岗位晋升" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+                                <asp:CheckBox ID="corp_box6" runat="server" Text="岗位晋升" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 
-							    <asp:Button ID="corp_btn7" runat="server" Text="年度旅游" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+							    <asp:CheckBox ID="corp_box7" runat="server" Text="年度旅游" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 							
-                                <asp:Button ID="corp_btn8" runat="server" Text="弹性工作" class="btn btn-order" onclick="edit_tag(this, '2')"/>
+                                <asp:CheckBox ID="corp_box8" runat="server" Text="弹性工作" class="btn btn-order" onclick="edit_tag(this, '2')"/>
 
-                                <asp:Button ID="corp_btn9" runat="server" Text="免费班车" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-						
-                                <asp:Button ID="corp_btn10" runat="server" Text="扁平管理" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-
-							    <asp:Button ID="corp_btn11" runat="server" Text="技能培训" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-							
-                                <asp:Button ID="corp_btn12" runat="server" Text="管理规范" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-
-                                <asp:Button ID="corp_btn13" runat="server" Text="节日礼物" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-						
-                                <asp:Button ID="corp_btn14" runat="server" Text="专项奖金" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-
-							    <asp:Button ID="corp_btn15" runat="server" Text="交通补助" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-							
-                                <asp:Button ID="corp_btn16" runat="server" Text="管吃管住" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-
-                                <asp:Button ID="corp_btn17" runat="server" Text="午餐补助" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-						
-                                <asp:Button ID="corp_btn18" runat="server" Text="定期体检" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-
-							    <asp:Button ID="corp_btn19" runat="server" Text="帅哥多" class="btn btn-order" onclick="edit_tag(this, '2')"/>
-							
-                                <asp:Button ID="corp_btn20" runat="server" Text="美女多" class="btn btn-order" onclick="edit_tag(this, '2')"/>		
-                            
-                                <asp:Button ID="corp_btn21" runat="server" Text="领导好" class="btn btn-order" onclick="edit_tag(this, '2')"/>						
-							
+                                
 						</div>
 						<div class="form-group">
-							<div class="input-group">
-                                <asp:TextBox ID="custom_tag_id" runat="server" type="text" name="tag" maxlength="4" class="form-control" placeholder="添加自定义标签"></asp:TextBox>
-								<div class="input-group-btn">
-                                    <asp:Button ID="add_Content" runat="server" Text="添加" type="button" class="btn btn-new1 dropdown-toggle" onclick="edit_tag('custom_tag_id', '1')"/>
-								</div>
-							</div>
 						</div>
 						<div class="tag-group" id="tag_list_cooper_div">
 							
 								<span class="text-danger">请选择最有竞争力的3个标签</span>
 							
 							
-						</div>
-						
-							
-							
-						
-						
+						</div>		
 							<span class="text-danger" id="error_tag_span"></span>
 						<div class="form-group form-actions pull-right">
 							<!-- <a href="cooper/index.html" class="btn btn-link" style="border-radius: 3px; font-size: 20px;">跳过</a> -->
 							<a href="javascript:void(0)">
-                                <asp:Button ID="save_Next" runat="server" Text="保存&amp;下一步" type="button" class="btn btn-new1 btn-lg" disabled style="border-radius: 3px;" OnClick="save_Next_Click"/>
+                                <asp:Button ID="save_Next" runat="server" Text="保存&amp;下一步" type="button" class="btn btn-new1 btn-lg" style="border-radius: 3px;" OnClick="save_Next_Click"/>
 							</a>
 						</div>
 					</div>

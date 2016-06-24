@@ -96,7 +96,7 @@
 					<div class="row">
 						<!-- 错误信息 -->
 						<!-- <font color="red"></font> -->
-						<form id="cooper_info_form" method="post" class="form-vertical" runat="server" action="javascript:void(0)"  enctype="multipart/form-data">
+						<form id="cooper_info_form" method="post" class="form-vertical" runat="server" enctype="multipart/form-data">
 							<input name="cooperId" value="2542" type="hidden">
 							<input name="cooperEmail" value="13301136@bjtu.edu.cn" type="hidden">
 							<div class="form-group">

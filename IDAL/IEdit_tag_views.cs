@@ -22,31 +22,17 @@ namespace IDAL
         String getUsername();
 
         /// <summary>
-        /// 获取公司标签1
+        /// 获取公司标签
         /// </summary>
         /// <returns>公司标签1</returns>
-        String getCorp_cont1();
-
-        /// <summary>
-        /// 获取公司标签2
-        /// </summary>
-        /// <returns>公司标签2</returns>
-        String getCorp_cont2();
-
-        /// <summary>
-        /// 获取公司标签3
-        /// </summary>
-        /// <returns>公司标签3</returns>
-        String getCorp_cont3();
+        String getCorp_cont();
 
         /// <summary>
         /// 添加公司标签
         /// </summary>
         /// <param name="username">公司id</param>
-        /// <param name="corp_cont1">公司标签1</param>
-        /// <param name="corp_cont2">公司标签2</param>
-        /// <param name="corp_cont3">公司标签3</param>
+        /// <param name="corp_cont1">公司标签</param>
         /// <returns></returns>
-        void InsertCorpCont(String username, String corp_cont1, String corp_cont2, String corp_cont3);
+        void InsertCorpCont(String username, String corp_cont);
     }
 }
