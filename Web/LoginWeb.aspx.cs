@@ -24,6 +24,10 @@ namespace Web
         protected void Page_Load(object sender, EventArgs e)
         {
             //在此构造一个BLL业务类
+            if (Session["username"] != null)
+            {
+                Response.Redirect("OxcodeWeb.aspx");
+            }
             this.login = new BLL.Login();
         }
 
@@ -44,7 +48,7 @@ namespace Web
             Response.Write(@"<script> alert('" + msg + @"')</script>");
 
             String mytype = login.gettype();
-            if (msg.Equals("succeed"))
+            if (msg.Equals("success"))
             {
                 Session["username"] = username;
                 Session["type"] = mytype;

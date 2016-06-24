@@ -14,7 +14,7 @@ namespace Web
 
         void BasePage_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"] == null)
+            if (Session["username"] == null)
             {
                 Response.Redirect("LoginWeb.aspx");
             }

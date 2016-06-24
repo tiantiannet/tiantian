@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Web
 {
-    public partial class New_Recruit_1 : System.Web.UI.Page
+    public partial class New_Recruit_1 : CompanyBasePage
     {
         
         protected void Page_Load(object sender, EventArgs e)
@@ -26,6 +26,10 @@ namespace Web
             String Public = not_select;
             if (is_public.Checked)
                 Public = select;
+            Session["nc1_type"] = type;
+            Session["nc1_is_camera"] = is_camera;
+            Session["nc1_is_public"] = is_public;
+            Response.Redirect("New_Recruit_2.aspx");
         }
     }
 }

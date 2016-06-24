@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CodeScales.Http, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CodeScales.Http.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -93,6 +97,7 @@
     <Content Include="img\weixin.jpg" />
     <Content Include="img\wlogo.png" />
     <Content Include="img\wlogo_sm.png" />
+    <Content Include="Invite_UserWeb.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\bootstrapValidator.js" />
@@ -112,6 +117,13 @@
     </Compile>
     <Compile Include="CompanyBasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invite_UserWeb.aspx.cs">
+      <DependentUpon>Invite_UserWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invite_UserWeb.aspx.designer.cs">
+      <DependentUpon>Invite_UserWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginWeb.aspx.cs">
       <DependentUpon>LoginWeb.aspx</DependentUpon>
@@ -168,6 +180,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{9f8dba9c-f1e8-4ccd-be48-1f3db264fe55}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{2e5c2ae7-9dc0-4f30-ab22-ed9368e19352}</Project>
+      <Name>Tools</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
