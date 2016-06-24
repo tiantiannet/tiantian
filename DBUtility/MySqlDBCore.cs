@@ -11,7 +11,7 @@ namespace DBUtility
     public class MySqlDBCore
     {
         private static MySqlTransaction transaction;
-        private const string CONNECTIONSTRING = "server=127.0.0.1;user id=root;password=;database=net";
+        private const string CONNECTIONSTRING = "server=192.168.1.105;user id=root;password=;database=net";
         private static MySqlConnection connection = new MySqlConnection(CONNECTIONSTRING);
 
         public static void BeginT()//Begin transaction
