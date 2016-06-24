@@ -61,7 +61,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Edit_tag_view.aspx" />
     <Content Include="Cooper_verify.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -75,6 +74,7 @@
     <Content Include="css\style_new.css" />
     <Content Include="css\summernote.css" />
     <Content Include="css\user_center.css" />
+    <Content Include="Edit_tag_view.aspx" />
     <Content Include="Edit_user_info.aspx" />
     <Content Include="img\01.png" />
     <Content Include="img\51shebaohr.png" />
@@ -109,26 +109,43 @@
     <Content Include="js\npm.js" />
     <Content Include="LoginWeb.aspx" />
     <Content Include="New_Recruit_1.aspx" />
+    <Content Include="new_recruit_2.aspx" />
     <Content Include="OneWeb.aspx" />
     <Content Include="OxcodeWeb.aspx" />
     <Content Include="RegisterWeb.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-      <DependentUpon>Edit_tag_view.aspx</DependentUpon>
+    <Compile Include="BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Edit_tag_view.aspx.designer.cs">
-      <DependentUpon>Edit_tag_view.aspx</DependentUpon>
+    <Compile Include="CompanyBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Cooper_verify.aspx.cs">
       <DependentUpon>Cooper_verify.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cooper_verify.aspx.designer.cs">
       <DependentUpon>Cooper_verify.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Edit_tag_view.aspx.cs">
+      <DependentUpon>Edit_tag_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_tag_view.aspx.designer.cs">
+      <DependentUpon>Edit_tag_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_user_info.aspx.cs">
+      <DependentUpon>Edit_user_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_user_info.aspx.designer.cs">
+      <DependentUpon>Edit_user_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invite_UserWeb.aspx.cs">
+      <DependentUpon>Invite_UserWeb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Invite_UserWeb.aspx.designer.cs">
+      <DependentUpon>Invite_UserWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginWeb.aspx.cs">
       <DependentUpon>LoginWeb.aspx</DependentUpon>
@@ -143,6 +160,12 @@
     </Compile>
     <Compile Include="New_Recruit_1.aspx.designer.cs">
       <DependentUpon>New_Recruit_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new_recruit_2.aspx.cs">
+      <DependentUpon>new_recruit_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new_recruit_2.aspx.designer.cs">
+      <DependentUpon>new_recruit_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="OneWeb.aspx.cs">
       <DependentUpon>OneWeb.aspx</DependentUpon>
