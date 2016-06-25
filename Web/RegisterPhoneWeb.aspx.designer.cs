@@ -10,7 +10,7 @@
 namespace Web {
     
     
-    public partial class One {
+    public partial class RegisterPhoneWeb {
         
         /// <summary>
         /// form1 控件。
@@ -22,6 +22,24 @@ namespace Web {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// phonenum 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox phonenum;
+        
+        /// <summary>
+        /// yzcode 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox yzcode;
+        
+        /// <summary>
         /// ImageCheck 控件。
         /// </summary>
         /// <remarks>
@@ -31,12 +49,21 @@ namespace Web {
         protected global::System.Web.UI.WebControls.Image ImageCheck;
         
         /// <summary>
-        /// Name 控件。
+        /// phonecode 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Name;
+        protected global::System.Web.UI.WebControls.TextBox phonecode;
+        
+        /// <summary>
+        /// password 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox password;
     }
 }

@@ -59,8 +59,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TopSdk">
+      <HintPath>..\DLL\TopSdk.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cooper_ChanllengeWeb.aspx" />
     <Content Include="Cooper_verify.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -112,7 +116,9 @@
     <Content Include="new_recruit_2.aspx" />
     <Content Include="OneWeb.aspx" />
     <Content Include="OxcodeWeb.aspx" />
+    <Content Include="RegisterPhoneWeb.aspx" />
     <Content Include="RegisterWeb.aspx" />
+    <Content Include="ValidateCode.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,20 +128,30 @@
     <Compile Include="CompanyBasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Cooper_ChanllengeWeb.aspx.cs">
+      <DependentUpon>Cooper_ChanllengeWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cooper_ChanllengeWeb.aspx.designer.cs">
+      <DependentUpon>Cooper_ChanllengeWeb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cooper_verify.aspx.cs">
       <DependentUpon>Cooper_verify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cooper_verify.aspx.designer.cs">
       <DependentUpon>Cooper_verify.aspx</DependentUpon>
     </Compile>
     <Compile Include="Edit_tag_view.aspx.cs">
       <DependentUpon>Edit_tag_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Edit_tag_view.aspx.designer.cs">
       <DependentUpon>Edit_tag_view.aspx</DependentUpon>
     </Compile>
     <Compile Include="Edit_user_info.aspx.cs">
       <DependentUpon>Edit_user_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Edit_user_info.aspx.designer.cs">
       <DependentUpon>Edit_user_info.aspx</DependentUpon>
@@ -163,6 +179,7 @@
     </Compile>
     <Compile Include="new_recruit_2.aspx.cs">
       <DependentUpon>new_recruit_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="new_recruit_2.aspx.designer.cs">
       <DependentUpon>new_recruit_2.aspx</DependentUpon>
@@ -185,12 +202,26 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPhoneWeb.aspx.cs">
+      <DependentUpon>RegisterPhoneWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPhoneWeb.aspx.designer.cs">
+      <DependentUpon>RegisterPhoneWeb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegisterWeb.aspx.cs">
       <DependentUpon>RegisterWeb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="RegisterWeb.aspx.designer.cs">
       <DependentUpon>RegisterWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

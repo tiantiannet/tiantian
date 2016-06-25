@@ -17,7 +17,7 @@ namespace Web
         /// <summary>
         /// 业务类
         /// </summary>
-        BLL.One one;
+        //BLL.One one;
 
         /// <summary>
         /// 页面加载
@@ -27,8 +27,8 @@ namespace Web
         protected void Page_Load(object sender, EventArgs e)
         {
             //在此构造一个BLL业务类
-            this.one = new BLL.One("1");
-            this.Name.Text = one.getName();
+            //this.one = new BLL.One("1");
+            //this.Name.Text = one.getName();
         }
     }
 }

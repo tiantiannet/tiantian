@@ -68,5 +68,16 @@ namespace DALFactory
             IEdit_user_info Iedit_user_info = new MysqlDAL.Edit_user_info();
             return Iedit_user_info;
         }
+
+        /// <summary>
+        /// 获取一个正在进行的挑战类
+        /// </summary>
+        /// <returns></returns>
+        public static IContest GetContest()
+        {
+            IContest ite = new MysqlDAL.Contest();
+            return ite;
+        }
+
     }
 }

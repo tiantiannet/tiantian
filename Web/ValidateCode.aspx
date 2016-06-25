@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OneWeb.aspx.cs" Inherits="Web.One" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ValidateCode.aspx.cs" Inherits="Web.ValidateCode" %>
 
 <!DOCTYPE html>
 
@@ -10,9 +10,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Image Runat="server" ID="ImageCheck" ImageUrl="ValidateCode.aspx"></asp:Image> 
+    
     </div>
-        <asp:Label ID="Name" runat="server" Text="Name"></asp:Label>
     </form>
 </body>
 </html>

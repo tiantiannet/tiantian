@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContestInfo.cs" />
     <Compile Include="Cooper_verifyInfo.cs" />
     <Compile Include="Edit_tag_viewsInfo.cs" />
     <Compile Include="Edit_user_infoInfo.cs" />

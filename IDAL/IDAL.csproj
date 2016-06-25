@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IContest.cs" />
     <Compile Include="ICooper_verify.cs" />
     <Compile Include="IEdit_tag_views.cs" />
     <Compile Include="IEdit_user_info.cs" />
